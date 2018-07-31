@@ -1,0 +1,226 @@
+<!DOCTYPE html><html class=''>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <title>The Experiment Factory: Survey</title>
+    
+    <link rel='stylesheet' type='text/css' href='css/material.blue-red.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/surveys.css'>
+    <link rel='stylesheet' type='text/css' href='css/jquery-ui-1.10.4.custom.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+
+<body>
+
+    <script src='js/jquery-2.1.1.min.js'></script>
+    <script src='js/material.min.js'></script>
+    <script src='js/jquery-ui-1.10.4.custom.min.js'></script>
+    <script src='js/jquery.wizard.js'></script>
+    <script src='js/jquery.form-3.50.js'></script>
+    <script src='js/jquery.validate-1.12.0.min.js'></script>
+
+<div class="experiment-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+<div class="experiment-ribbon"></div>
+<main class="experiment-main mdl-layout__content">
+<div class="experiment-container mdl-grid">
+<div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+</div>
+<div class="experiment-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+
+<div id="questions">
+
+<form name="questions" action="#", method="POST">
+<div class="step">
+<h3>The following questions are about your meditation experience.</h3><br><br><br><br></div>
+<div class="step">
+<h3>Select the answer which best describes your <em><strong>current</strong></em> meditation practice.</h3><br><br><br><br>
+<p id="meditation-expertise-survey_2_options">I meditate</p>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_2_0">
+<input type="radio" id="option-meditation-expertise-survey_2_0" class="mdl-radio__button required page2" name="meditation-expertise-survey_2_options" value="6" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="I meditate">
+<span class="mdl-radio__label">daily or almost daily</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_2_1">
+<input type="radio" id="option-meditation-expertise-survey_2_1" class="mdl-radio__button required page2" name="meditation-expertise-survey_2_options" value="3" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="I meditate">
+<span class="mdl-radio__label"> 2-4 times per week</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_2_2">
+<input type="radio" id="option-meditation-expertise-survey_2_2" class="mdl-radio__button required page2" name="meditation-expertise-survey_2_options" value="1" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="I meditate">
+<span class="mdl-radio__label"> about once per week</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_2_3">
+<input type="radio" id="option-meditation-expertise-survey_2_3" class="mdl-radio__button required page2" name="meditation-expertise-survey_2_options" value=".5" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="I meditate">
+<span class="mdl-radio__label"> less than once per week</span>
+</label><br><br><br><br></div>
+<div class="step">
+<h3>Answer the following question if you have practiced a different style of meditation, or at a different frequency.  If this doesn't apply, just click <strong>Next</strong>.</h3><br><br><br><br>
+<p id="meditation-expertise-survey_4_options">In this previous period, I meditated</p>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_4_0">
+<input type="radio" id="option-meditation-expertise-survey_4_0" class="mdl-radio__button  page3" name="meditation-expertise-survey_4_options" value="6" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="In this previous period, I meditated">
+<span class="mdl-radio__label">daily or almost daily</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_4_1">
+<input type="radio" id="option-meditation-expertise-survey_4_1" class="mdl-radio__button  page3" name="meditation-expertise-survey_4_options" value="3" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="In this previous period, I meditated">
+<span class="mdl-radio__label"> 2-4 times per week</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_4_2">
+<input type="radio" id="option-meditation-expertise-survey_4_2" class="mdl-radio__button  page3" name="meditation-expertise-survey_4_options" value="1" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="In this previous period, I meditated">
+<span class="mdl-radio__label"> about once per week</span>
+</label>
+<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-meditation-expertise-survey_4_3">
+<input type="radio" id="option-meditation-expertise-survey_4_3" class="mdl-radio__button  page3" name="meditation-expertise-survey_4_options" value=".5" meta-options="daily or almost daily| 2-4 times per week| about once per week| less than once per week" meta-text="In this previous period, I meditated">
+<span class="mdl-radio__label"> less than once per week</span>
+</label><br><br><br><br></div>
+<div class="step">
+<h3>Answer the following question if you have ever attended a meditation retreat. If you have never attended a meditation retreat, just click <strong>Next</strong>.</h3><br><br><br><br>
+<p id="meditation-expertise-survey_6">For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below.</p>
+<div class="mdl-textfield mdl-js-textfield">
+<input class="mdl-textfield__input page4 " type="number" id="meditation-expertise-survey_6" name="meditation-expertise-survey_6" meta-text="For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below.">
+<label class="mdl-textfield__label" for="meditation-expertise-survey_6"></label>
+<span class="mdl-textfield__error">Input is not a number!</span>
+</div><br><br><br></div>
+<div class="step">
+<h3>Thank you for completing this survey.  Press <strong>finish</strong> to continue.</h3><br><br><br><br></div>
+
+<div class="navigation">
+    <ul class="clearfix">
+        <li><button type="button" 
+                    name="backward" 
+                    class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent backward">Previous</button></li>
+	<li><button type="button" 
+                    name="forward" 
+                    class="forward mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Next</button></li>
+        <li><button type="submit" 
+                    name="process" 
+                    class="submit mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Finish</button></li>
+    </ul>
+</div>
+
+<div class="pad">
+    <div id="progressbar"></div>
+</div>
+</form>
+</div>
+
+<script>
+$( document ).ready(function() {
+
+    expfactory_finished = false;
+
+    // Basic wizard with progress bar
+    $( "#progressbar" ).progressbar();
+    $( "#questions" ).wizard({
+        stepsWrapper: "#wrapped",
+	submit: ".submit",
+	beforeForward: function( event, state ) {
+
+            // Function to add message that answer is required
+            function is_required(elements){
+                var missing = false;
+                elements.each(function(index,element){
+                    var pid = "#" + $(element).attr("name")
+                    $(pid).css("color","red")
+                    missing = true;                   
+                });
+
+                if (missing == true){
+                   alert("Please answer all required questions in red.");
+                }
+            }
+
+             if ( state.stepIndex === 2 ) {
+ if (($.unique($(`.page2.required[type=number],.page2.required:text`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required[type=number], [meta-text*="` + this + `"].required:text`).filter(function() { return $(this).val();}).length > 0}).get().indexOf(false) != -1) || ($.unique($(`.page2.required:not([type=number]):not(:text)`).map(function(){return $(this).attr(`meta-text`)})).map(function() {return $(`[meta-text*="` + this + `"].required:checked`).length > 0}).get().indexOf(false) != -1)){
+is_required($(`.page2.required:not(checked)`));
+return false;
+ } else {
+expfactory_finished=true;
+}}
+
+	    return !!$( this ).wizard( "form" ).valid();
+        },
+	afterSelect: function( event, state ) {
+	    $( "#progressbar" ).progressbar( "value", state.percentComplete );
+            if (expfactory_finished == true){
+                $(".submit").enable();
+            }
+        }
+
+    // Form submission
+    }).wizard( "form" ).submit(function( event ) {
+
+        event.preventDefault();
+        
+        var $inputs = $("input:checked");
+        var $text = $("input:text")
+        var $number = $("input[type = number]")
+        var $elements = $inputs.add($text).add($number)
+        
+        // Prepare data results
+        var results = []
+        $elements.each(function(index, element) {
+            var result = {}
+
+            if ($.inArray( $(element).attr("name"), [ "forward", "backward", "process"] ) == -1) {
+                result.name = $(element).attr("name");
+                if ($(element).attr("value") == undefined) {
+                    result.value = $(element).val();
+                } else {
+                    result.value = $(element).attr("value");
+                }
+                result.options = $(element).attr("meta-options");
+                result.text = $(element).attr("meta-text");
+                results.push(result);
+             }
+        })
+
+        
+        $.ajax({
+
+                type: 'POST',
+                url: '/save',
+                data: {'data': results},
+
+                success: function() {
+                    console.log('success');
+                    document.location = '/next'
+                 },
+
+                 // Endpoint not running, local save
+                 error: function(err) {
+
+                     if (err.status == 200) {
+                        document.location = '/next'
+                     }        
+        
+                     console.log("Error with POST" + err.status + ", downloading to local file.")
+                     // Save data to browser
+
+                     var data = "text/json;charset=utf-8," + JSON.stringify(results);
+                     var a = document.createElement('a');
+                     a.title = "Download"
+                     a.id = "download"
+                     a.type = "button"
+                     a.download = 'meditation-expertise-survey_result.json';
+                     a.href = 'data:' + data;
+                     $(".submit").html("Download")
+                     $(".submit").click(function(){
+                         $("body").append(a)
+                         a.click()
+                     })
+
+                  }
+         });
+
+     // Validation
+     }).validate({
+	errorPlacement: function( error, element ) {
+	    if ( element.is( ":radio" ) || element.is( ":checkbox" ) ) {
+		error.insertBefore( element.next() );
+            } else {
+	        error.insertAfter( element );
+	 }
+      }
+  });
+});
+</script>
+</body>
+</html>
