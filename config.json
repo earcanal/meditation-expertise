@@ -2,7 +2,7 @@
     "name": "Meditation Expertise Survey",
     "template":"survey",
     "url":"https://www.github.com/earcanal/meditation-expertise-survey",
-    "exp_id": "meditation-expertise-survey",
+    "exp_id": "meditation-expertise",
     "contributors": [ "Paul Sharpe" ],
     "time": 5,
     "reference": ["https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290768/"],
