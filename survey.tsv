@@ -2,8 +2,9 @@ question_type	question_text	required	page_number	option_text	option_values
 instruction	The following questions are about your meditation experience.	0	1		
 instruction	Select the answer which best describes your <em><strong>current</strong></em> meditation practice.	1	2		6,3,1,.5
 radio	I meditate	1	2	daily or almost daily, 2-4 times per week, about once per week, less than once per week	6,3,1,.5
-instruction	Answer the following question if you have practiced a different style of meditation, or at a different frequency.  If this doesn't apply, just click <strong>Next</strong>.	0	3		6,3,1,.5
+radio	On days when I meditate, the duration is	1	2	5-15 minutes/day,15-30 minutes/day,>30 minutes/day	.12,.33,.67
+instruction	Answer the following questions if you have ever practiced a different style of meditation, or at a different frequency.  If this doesn't apply, just click <strong>Next</strong>.	0	3		6,3,1,.5
 radio	In this previous period, I meditated	0	3	daily or almost daily, 2-4 times per week, about once per week, less than once per week	6,3,1,.5
+radio	On days when I meditate, the duration is	0	3	5-15 minutes/day,15-30 minutes/day,>30 minutes/day	.12,.33,.67
 instruction	Answer the following question if you have ever attended a meditation retreat. If you have never attended a meditation retreat, just click <strong>Next</strong>.	0	4		
 numeric	For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below.	0	4		
-instruction	Thank you for completing this survey.  Press <strong>finish</strong> to continue.	0	6		
