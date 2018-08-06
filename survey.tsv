@@ -5,6 +5,6 @@ radio	I meditate	1	2	daily or almost daily, 2-4 times per week, about once per w
 radio	On days when I meditate, the duration is	1	2	5-15 minutes/day,15-30 minutes/day,>30 minutes/day	.12,.33,.67
 instruction	Answer the following questions if you have ever practiced a different style of meditation, or at a different frequency.  If this doesn't apply, just click <strong>Next</strong>.	0	3		6,3,1,.5
 radio	In this previous period, I meditated	0	3	daily or almost daily, 2-4 times per week, about once per week, less than once per week	6,3,1,.5
-radio	On days when I meditate, the duration is	0	3	5-15 minutes/day,15-30 minutes/day,>30 minutes/day	.12,.33,.67
+radio	On days when I meditated, the duration is	0	3	5-15 minutes/day,15-30 minutes/day,>30 minutes/day	.12,.33,.67
 instruction	Answer the following question if you have ever attended a meditation retreat. If you have never attended a meditation retreat, just click <strong>Next</strong>.	0	4		
-numeric	For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below.	0	4		
+numeric	For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below. For example, if you have attended a nine day, and a ten day retreat where you meditated for fourteen hours per day, your calculation would be 9 * 14 + 10 * 14 = 266.	0	4		
