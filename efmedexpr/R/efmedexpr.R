@@ -1,0 +1,40 @@
+#' Calculate Meditation Expertise
+#'
+#' Calculates meditation expertise in hours (Hasenkamp & Barsalou, 2012, p.11).  Expects a data frame
+#' formatted by \code{\link[expfactoryr:process_expfactory_survey]{expfactoryr::process_expfactory_survey}}.
+#'
+#' @examples
+#'
+#' expertise_df <- expand.grid(token = participants$token, survey = 'meditation-expertise-results.json') %>%
+#'   rowwise() %>%
+#'   do(., expfactoryr::process_expfactory_survey(.$token, paste('data/', .$token, '_finished/', .$survey, sep=''),
+#'     flat=TRUE))
+#'  expertise <- efmedexpr::meditation_expertise(expertise_df)
+#'
+#' @param df Data frame
+#' @keywords meditation,expertise
+#' @export
+#' @return Data frame
+meditation_expertise <- function(df) {
+  expertise <- df %>%
+    spread(key = question, value = value) %>%
+    dplyr::rename(
+      contact = starts_with('As a population'),
+      retreat = starts_with('For each retreat'),
+      current.days = 'I meditate',
+      current.years = starts_with('For how many years have you been meditating'),
+      current.mins = starts_with('On days when I meditate,'),
+      previous.days = starts_with('In this previous period'),
+      previous.years = starts_with('For how many years did you meditate'),
+      previous.mins = starts_with('On days when I meditated')
+    ) %>%
+    mutate(contact = ifelse(is.na(contact), FALSE, TRUE), retreat = as.numeric(retreat),
+           current.days = as.numeric(current.days), current.mins = as.numeric(current.mins),
+           current.years = as.numeric(current.years), previous.days = as.numeric(previous.days),
+           previous.mins = as.numeric(previous.mins),previous.years = as.numeric(previous.years))
+  expertise[is.na(expertise)] <- 0 # convert all '' -> 0
+  expertise <- expertise %>%
+    mutate(hours = (current.days * 52 * current.years * current.mins) + (previous.days * 52 * previous.years * previous.mins)
+           + retreat)
+  return(expertise)
+}
