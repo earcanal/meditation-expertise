@@ -5,7 +5,7 @@ participants <- read.csv(file='../fixtures/participants.csv', na.strings = c('')
 surveys <- expand.grid(token = participants$token,
                        survey = 'meditation-expertise-results.json') %>%
   rowwise() %>%
-  do(., expfactoryr::process_expfactory_survey(.$token,
+  do(., expfactory::process_expfactory_survey(.$token,
                                                paste('../fixtures/', .$token, '_finished/', .$survey, sep=''), flat=TRUE)) %>%
   rename(token = Token)
 

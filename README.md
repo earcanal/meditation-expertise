@@ -12,7 +12,7 @@ There's an associated **alpha** `R` package for processing the data.
 
 ```
 library(devtools)
-install_github('earcanal/meditation-expertise', subdir = 'efmedexpr')
+install_github('earcanal/meditation-expertise/expfactory.meditationexpertise')
 ```
 
 # References
