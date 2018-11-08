@@ -9,7 +9,7 @@
 #'   rowwise() %>%
 #'   do(., expfactoryr::process_expfactory_survey(.$token, paste('data/', .$token, '_finished/', .$survey, sep=''),
 #'     flat=TRUE))
-#'  expertise <- efmedexpr::meditation_expertise(expertise_df)
+#'  expertise <- meditation_expertise(expertise_df)
 #'
 #' @param df Data frame
 #' @keywords meditation,expertise
