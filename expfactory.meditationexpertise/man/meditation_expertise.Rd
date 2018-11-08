@@ -20,7 +20,7 @@ formatted by \code{\link[expfactory:process_expfactory_survey]{expfactory::proce
 
 expertise_df <- expand.grid(token = participants$token, survey = 'meditation-expertise-results.json') \%>\%
   rowwise() \%>\%
-  do(., expfactoryr::process_expfactory_survey(.$token, paste('data/', .$token, '_finished/', .$survey, sep=''),
+  do(., expfactory::process_expfactory_survey(.$token, paste('data/', .$token, '_finished/', .$survey, sep=''),
     flat=TRUE))
  expertise <- meditation_expertise(expertise_df)
 

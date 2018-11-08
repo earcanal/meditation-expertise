@@ -19,7 +19,6 @@ meditation_expertise <- function(df) {
   expertise <- df %>%
     spread(key = question, value = value) %>%
     dplyr::rename(
-      contact = starts_with('As a population'),
       retreat = starts_with('For each retreat'),
       current.days = 'I meditate',
       current.years = starts_with('For how many years have you been meditating'),
@@ -28,7 +27,7 @@ meditation_expertise <- function(df) {
       previous.years = starts_with('For how many years did you meditate'),
       previous.mins = starts_with('On days when I meditated')
     ) %>%
-    mutate(contact = ifelse(is.na(contact), FALSE, TRUE), retreat = as.numeric(retreat),
+    mutate(retreat = as.numeric(retreat),
            current.days = as.numeric(current.days), current.mins = as.numeric(current.mins),
            current.years = as.numeric(current.years), previous.days = as.numeric(previous.days),
            previous.mins = as.numeric(previous.mins),previous.years = as.numeric(previous.years))
