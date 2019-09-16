@@ -17,12 +17,12 @@ Calculates meditation expertise in hours (Hasenkamp & Barsalou, 2012, p.11).  Ex
 formatted by \code{\link[expfactory:process_expfactory_survey]{expfactory::process_expfactory_survey}}.
 }
 \examples{
-
+\dontrun{
 expertise_df <- expand.grid(token = participants$token, survey = 'meditation-expertise-results.json') \%>\%
   rowwise() \%>\%
   do(., expfactory::process_expfactory_survey(.$token, paste('data/', .$token, '_finished/', .$survey, sep=''),
     flat=TRUE))
  expertise <- meditation_expertise(expertise_df)
-
+}
 }
 \keyword{meditation,expertise}
