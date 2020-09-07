@@ -12,5 +12,5 @@ surveys <- expand.grid(token = participants$token,
 expertise <- meditation_expertise(surveys)
 
 test_that('Expertise hours value', {
-  expect_equal(expertise[[1,'hours']], 3975.6)
+  expect_equal(expertise[[1,'hours']], 313.56)
 })

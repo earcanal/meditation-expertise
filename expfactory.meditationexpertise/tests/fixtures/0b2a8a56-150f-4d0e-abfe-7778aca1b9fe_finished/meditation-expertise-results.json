@@ -1,0 +1,19 @@
+{
+    "data[0][name]": "meditation-expertise_2_options",
+    "data[0][options]": "daily or almost daily| 2-4 times per week| about once per week| less than once per week",
+    "data[0][text]": "I meditate",
+    "data[0][value]": "6",
+    "data[1][name]": "meditation-expertise_3_options",
+    "data[1][options]": "5-15 minutes/day|15-30 minutes/day|>30 minutes/day",
+    "data[1][text]": "On days when I meditate, the duration is",
+    "data[1][value]": ".67",
+    "data[2][name]": "meditation-expertise_4",
+    "data[2][text]": "For how many years have you been meditating at this frequency and duration?  Enter a number e.g. 5, 2.5, 0.75",
+    "data[2][value]": "1.5",
+    "data[3][name]": "meditation-expertise_8",
+    "data[3][text]": "For how many years did you meditate at this frequency and duration?  Enter a number e.g. 5, 2.5, 0.75",
+    "data[3][value]": "",
+    "data[4][name]": "meditation-expertise_10",
+    "data[4][text]": "For each retreat you have attended, multiply the number of days the retreat lasted by the approximate number of hours you meditated each day.  Add together the number of hours you calculated for each retreat, and enter the grand total below. For example, if you have attended a nine day, and a ten day retreat where you meditated for fourteen hours per day, your calculation would be 9 * 14 + 10 * 14 = 266.",
+    "data[4][value]": ""
+}
